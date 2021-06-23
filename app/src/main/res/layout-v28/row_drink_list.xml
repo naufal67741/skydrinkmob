@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:id="@+id/list_row"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:text="Nama Drink"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/row_drink_name"></TextView>
+        <TextView
+            android:layout_width="230px"
+            android:layout_height="wrap_content"
+            android:text="Harga"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/row_price"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="275dp"
+                android:layout_height="130dp"
+                android:text="Description"
+                android:layout_below="@+id/row_drink_name"
+                android:maxLength="300"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/row_drink_desc"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sweetness"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:id="@+id/row_drink_sweetness"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="230px"
+                android:layout_height="150px"
+                android:layout_marginBottom="50px"
+                android:text="BUY"
+                android:id="@+id/row_button"
+                ></Button>
+
+            <Button
+                android:layout_width="230px"
+                android:layout_height="150px"
+                android:text="Favorite"
+                android:id="@+id/row_fav"
+                ></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
